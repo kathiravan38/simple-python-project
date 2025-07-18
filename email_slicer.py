@@ -1,5 +1,12 @@
-email=input("enter your email address:")
-index=email.index("@")
-username=email[:index]
-domain=email[index+1:]
-print(f"username:{username}\ndomain:{domain}")
+#email slicer
+def email_slicer():
+    email=input("enter your email address:")
+    if "@" in email:
+        index=email.index("@")
+        username=email[:index]
+        domain=email[index+1:]
+        print(f"your username:{username}\nyour domain:{domain}")
+    else:
+        print("invalid email format")
+
+email_slicer()
