@@ -8,41 +8,41 @@ targetunit= input("enter target unit(g,kg or lbs): ").lower()
 if unit == "g":
     if targetunit == "kg":
         w = weight/1000
-        print(f"result={round(w)} kg")
+        print(f"result={round(w,2)} kg")
     elif targetunit == "lbs":
         w = weight/453.6
-        print(f"result={round(w)} lbs")
+        print(f"result={round(w,2)} lbs")
     elif targetunit == "g":
         print("conversion is not needed")
     else:
-        print("invalid target unit")
+        print(f"{targetunit} invalid target unit \n available units are (g,kg,lbs)")
 
 #kg to g,lbs
 elif unit == "kg":
     if targetunit == "lbs":
         w = weight*2.2046
-        print(f"result={round(w)} lbs")
+        print(f"result={round(w,2)} lbs")
     elif targetunit == "g":
         w = weight*1000
-        print(f"result={round(w)} g")
+        print(f"result={round(w,2)} g")
     elif targetunit == "kg":
         print("conversion is not needed")
     else:
-        print("invalid target unit")
+        print(f"{targetunit} invalid target unit \n available units are (g,kg,lbs)")
 
 #lbs to kg,g
 elif unit == "lbs":
     if targetunit == "kg":
         w = weight/2.2046
-        print(f"result={round(w)} kg")
+        print(f"result={round(w,2)} kg")
     elif targetunit == "g":
         w = weight*453.6
-        print(f"result={round(w)} g")
+        print(f"result={round(w,2)} g")
     elif targetunit == "lbs":
         print("conversion is not needed")
     else:
-        print("invalid target unit")
+        print(f"{targetunit} invalid target unit \n available units are (g,kg,lbs)")
 
 else:
-    print("invalid input")
+    print(f"{unit} invalid unit \n available units are (g,kg,lbs)")
 
