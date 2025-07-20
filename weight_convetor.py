@@ -15,7 +15,7 @@ if unit == "g":
     elif targetunit == "g":
         print("conversion is not needed")
     else:
-        print(f"{targetunit} invalid target unit \n available units are (g,kg,lbs)")
+        print(f"'{targetunit}' invalid target unit \navailable units are (g,kg,lbs)")
 
 #kg to g,lbs
 elif unit == "kg":
@@ -28,7 +28,7 @@ elif unit == "kg":
     elif targetunit == "kg":
         print("conversion is not needed")
     else:
-        print(f"{targetunit} invalid target unit \n available units are (g,kg,lbs)")
+        print(f"'{targetunit}' invalid target unit \navailable units are (g,kg,lbs)")
 
 #lbs to kg,g
 elif unit == "lbs":
@@ -41,8 +41,8 @@ elif unit == "lbs":
     elif targetunit == "lbs":
         print("conversion is not needed")
     else:
-        print(f"{targetunit} invalid target unit \n available units are (g,kg,lbs)")
+        print(f"'{targetunit}' invalid target unit \navailable units are (g,kg,lbs)")
 
 else:
-    print(f"{unit} invalid unit \n available units are (g,kg,lbs)")
+    print(f"'{unit}' invalid unit \navailable units are (g,kg,lbs)")
 
