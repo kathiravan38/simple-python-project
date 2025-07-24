@@ -24,9 +24,9 @@ while True:
                 print("**✅CORRECT!✅**")
                 break
             elif player_guess > computer_guess:
-                print("--⬆️TOO HIGH⬆️--")
+                print("--⬆️TOO HIGH⬆️,TRY AGAIN--")
             else:
-                print("--⬇️TOO LOW⬇️--")
+                print("--⬇️TOO LOW⬇,TRY AGAIN--")
         else:
             print(f"-please enter a number between {low} to {high}-")
        
